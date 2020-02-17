@@ -12,6 +12,8 @@ namespace Tests
         public void sets_damage_to_half_at_50_percent_mitigation()
         {
             int finalDamage = DamageCalculator.CalculateDamage(10, 0.5f);
+
+            Assert.AreEqual(expected: 5, actual: finalDamage);
         }
     }
 }

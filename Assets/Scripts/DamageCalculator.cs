@@ -7,6 +7,6 @@ public class DamageCalculator
 {
     public static int CalculateDamage(int amount, float mitigationPercent)
     {
-        throw new NotImplementedException();
+        return Convert.ToInt32(amount * mitigationPercent);
     }
 }
