@@ -15,5 +15,13 @@ namespace Tests
 
             Assert.AreEqual(expected: 5, actual: finalDamage);
         }
+
+        [Test]
+        public void calculates_2_damage_from_10_with_80_percent_mitigation()
+        {
+            int finalDamage = DamageCalculator.CalculateDamage(amount: 10, mitigationPercent: 0.8f);
+
+            Assert.AreEqual(expected: 2, actual: finalDamage);
+        }
     }
 }
